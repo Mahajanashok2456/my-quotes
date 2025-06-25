@@ -6,6 +6,7 @@ body, html, #root, .App {
   background: #00000a;
   color: #DAD0E3;
   font-family: 'Playfair Display', 'Dancing Script', 'Segoe UI', Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 header {
@@ -395,27 +396,61 @@ footer, .main-footer {
   z-index: 101;
 }
 
+@media (max-width: 900px) {
+  .main-title {
+    font-size: 2.7rem;
+  }
+  .main-header {
+    margin-top: 1.2rem;
+  }
+  .quote-card {
+    max-width: 90vw;
+    font-size: 1.08rem;
+    padding: 1.1rem 1rem;
+  }
+  .modal-content {
+    min-width: 70vw;
+    padding: 1.5rem 1rem 1.2rem 1rem;
+  }
+}
+
 @media (max-width: 600px) {
   .main-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
+  }
+  .main-header {
+    margin-top: 0.7rem;
+  }
+  .main-slogan {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  .slogan-separator {
+    margin-bottom: 1.2rem;
+  }
+  .quotes-list {
+    gap: 1rem;
   }
   .quote-card {
     min-width: 90vw;
     max-width: 98vw;
     padding: 1rem 0.7rem;
-    font-size: 1.05rem;
-  }
-  .main-header {
-    margin-top: 1.2rem;
-  }
-  .quotes-list {
-    gap: 1.1rem;
+    font-size: 1rem;
   }
   .floating-ig-btn, .floating-admin-btn {
-    left: 1rem;
-    right: 1rem;
-    bottom: 1rem;
+    left: 1rem !important;
+    right: 1rem !important;
+    bottom: 1rem !important;
     padding: 0.5rem 1rem;
-    font-size: 1rem;
+    font-size: 0.95rem;
+    border-radius: 10px;
+  }
+  .modal-content {
+    min-width: 90vw;
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+  .main-footer, footer {
+    font-size: 0.95rem;
+    margin: 2rem 0 0.7rem 0;
   }
 }
